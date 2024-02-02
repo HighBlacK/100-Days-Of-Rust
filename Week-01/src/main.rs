@@ -1,7 +1,8 @@
 #[allow(dead_code)]
 
-fn main() {
-    println!("Hello, world!");
+fn main() 
+{
+    
 }
 
 pub mod day_one;
