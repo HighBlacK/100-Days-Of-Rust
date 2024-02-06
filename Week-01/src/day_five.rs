@@ -2,6 +2,11 @@
 //TODO: Come back and write something better
 fn pair_of_socks(socks: String) -> i32
 {
+    if socks.is_empty()
+    {
+        return 0;
+    }
+
     let mut a = 0;
     let mut b = 0;
     let mut c = 0;
@@ -43,4 +48,5 @@ fn test()
     assert_eq!(pair_of_socks(String::from("AA")), 1);
     assert_eq!(pair_of_socks(String::from("ABABC")), 2);
     assert_eq!(pair_of_socks(String::from("CABBACCC")), 4);
+    assert_eq!(pair_of_socks(String::new()), 0);
 }
