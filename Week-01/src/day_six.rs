@@ -2,7 +2,7 @@
 
 use std::fs::read_to_string;
 use std::time::SystemTime;
-use std::path::{self, Path};
+use std::path::Path;
 
 fn next_prime(input: u32) -> u32
 {
@@ -74,8 +74,7 @@ pub fn pre_compute_primes(path: &Path)
     store_primes_in_file(vector, path);
 }
 
-use std::{fs::File, io::{Read, Write}};
-use std::str::from_utf8;
+use std::{fs::File, io::Write};
 
 fn store_primes_in_file(primes: Vec<u32>, path: &Path)
 {
