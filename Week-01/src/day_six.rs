@@ -146,12 +146,8 @@ fn test_2()
 
 fn next_prime_another_attempt(input: u32) -> Option<u32>
 {
-    if is_prime(input)
-    {
-        return Some(input);
-    }
-
-    for num in (input..).map(|x| x + 1)
+    
+    for num in input..
     {
         if is_prime(num)
         {
