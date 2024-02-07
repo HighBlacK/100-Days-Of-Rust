@@ -1,8 +1,10 @@
 #[allow(dead_code)]
 
+use std::path::Path;
+
 fn main() 
 {
-    day_six::pre_compute_primes();
+    day_six::pre_compute_primes_multitheaded(10000, Path::new("primes(10000).json"));
 }
 
 pub mod day_one;
